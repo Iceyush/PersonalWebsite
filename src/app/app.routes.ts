@@ -5,5 +5,7 @@ import About from './about/about';
 export const routes: Routes = [
   { path: '', component: Home },
   { path: 'about', component: About },
-  { path: '**', redirectTo: '' }
+  { path: '**', redirectTo: '' },
+  { path: '**', redirectTo: '', pathMatch: 'full' }
+
 ];
