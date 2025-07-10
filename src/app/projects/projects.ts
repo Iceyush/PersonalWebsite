@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
 import Navbar from '../navbar/navbar';
 
-
 @Component({
   standalone: true,
-  selector: 'app-about',
-  templateUrl: './about.html',
-  styleUrls: ['./about.css'],
+  selector: 'app-projects',
+  templateUrl: './projects.html',
+  styleUrls: ['./projects.css'],
   imports: [Navbar]
 })
-export default class About {}
+export default class Projects {}
