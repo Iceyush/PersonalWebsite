@@ -1,17 +1,31 @@
 .about-container {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+  color: #000204;
   text-align: center;
 }
 
-.about-container h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+.animated-photo {
+  margin-top: 2rem;
+  display: inline-block;
+  animation: fly-in 1.2s ease-out forwards;
 }
 
-.about-container p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #444;
+.animated-photo img {
+  width: 160px;
+  border-radius: 50%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* Keyframes for diagonal fly-in */
+@keyframes fly-in {
+  0% {
+    transform: translate(-200px, -200px) scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
 }

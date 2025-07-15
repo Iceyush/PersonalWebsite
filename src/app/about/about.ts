@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import Navbar from '../navbar/navbar';
+import { NgIf } from '@angular/common';
 
 
 @Component({
@@ -7,6 +8,16 @@ import Navbar from '../navbar/navbar';
   selector: 'app-about',
   templateUrl: './about.html',
   styleUrls: ['./about.css'],
-  imports: [Navbar]
+  imports: [Navbar, NgIf]
 })
-export default class About {}
+export default class About {
+
+  showImage = false;
+
+  ngOnInit() {
+    // trigger the animation after a slight delay
+    setTimeout(() => {
+      this.showImage = true;
+    }, 100); // give the route time to load
+  }
+}
