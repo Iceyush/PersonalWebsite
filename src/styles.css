@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+/* Full viewport dark gradient */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #0d0d0d, #1a1a1a);
+  color: #f8f9fa;
+  font-family: system-ui, sans-serif;
+  display: flex;
+  flex-direction: column;
+}

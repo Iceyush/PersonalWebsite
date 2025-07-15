@@ -11,13 +11,18 @@ import { NgIf } from '@angular/common';
   imports: [Navbar, NgIf]
 })
 export default class About {
-
+ showText = false;
   showImage = false;
 
   ngOnInit() {
-    // trigger the animation after a slight delay
+    // Reveal paragraph first
+    setTimeout(() => {
+      this.showText = true;
+    }, 600); // slight delay after route load
+
+    // Reveal image a bit after paragraph
     setTimeout(() => {
       this.showImage = true;
-    }, 100); // give the route time to load
+    }, 1000); // adjust timing if needed
   }
 }
