@@ -1,11 +1,24 @@
-/* Full viewport dark gradient */
+/* Ensure full viewport height and column flow */
 html, body {
-  height: 100%;
   margin: 0;
   padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   background: linear-gradient(to bottom, #0d0d0d, #1a1a1a);
   color: #f8f9fa;
-  font-family: system-ui, sans-serif;
+}
+
+/* Layout container holding routed content + footer */
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Page content should grow to fill space above footer */
+.page-content {
+  flex: 1;
   display: flex;
   flex-direction: column;
 }

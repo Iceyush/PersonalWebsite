@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import Navbar from '../navbar/navbar';
 import { NgIf } from '@angular/common';
-import Footer from '../footer/footer';
 
 
 @Component({
@@ -9,7 +8,7 @@ import Footer from '../footer/footer';
   selector: 'app-about',
   templateUrl: './about.html',
   styleUrls: ['./about.css'],
-  imports: [Navbar, NgIf,Footer]
+  imports: [Navbar, NgIf]
 })
 export default class About {
  showText = false;

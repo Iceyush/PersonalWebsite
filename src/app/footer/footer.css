@@ -1,9 +1,29 @@
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: rgb(6, 4, 4);
-  color: #ffffff;
+.site-footer {
+  background-color: #0e0e0e;
+  color: #777;
+  padding: 0.5rem 0;
   text-align: center;
+  font-size: 0.7rem;
+  border-top: 1px solid #222;
+}
+
+.social-icons {
+  margin: 0.25rem 0;
+}
+
+.social-icons a {
+  margin: 0 0.4rem;
+  color: #33acff;
+  font-size: 1rem;
+  transition: color 0.2s ease;
+}
+
+.social-icons a:hover {
+  color: #ffffff;
+}
+
+.footer-credit {
+  margin-top: 0.25rem;
+  font-size: 0.65rem;
+  color: #555;
 }
