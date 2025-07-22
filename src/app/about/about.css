@@ -13,7 +13,9 @@
 
 .animated-photo img {
   width: 160px;
-  border-radius: 50%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 60%;
 
 }
 
