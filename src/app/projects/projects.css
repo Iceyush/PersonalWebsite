@@ -1,17 +1,17 @@
-.projects-container {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 1rem;
+.projects-section {
+  padding: 4rem 2rem;
+  background-color: #0d0d0d;
+  color: white;
   text-align: center;
 }
 
-.projects-container h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  padding: 1rem 0;
+  scroll-snap-type: x mandatory;
 }
 
-.projects-container p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #444;
+.scroll-container::-webkit-scrollbar {
+  display: none;
 }
